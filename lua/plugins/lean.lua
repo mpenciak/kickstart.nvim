@@ -1,3 +1,7 @@
+local function on_attach(_, _)
+  vim.keymap.set('n', '<C-w>i', '<C-w>K20<C-w>-')
+end
+
 return {
   'Julian/lean.nvim',
   event = { 'BufReadPre *.lean', 'BufNewFile *.lean' },
