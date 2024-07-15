@@ -67,6 +67,9 @@ require('lazy').setup({
   -- ToggleTerm
   require 'plugins.toggleterm',
 
+  -- Zen mode
+  'folke/zen-mode.nvim',
+
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
