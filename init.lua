@@ -67,6 +67,9 @@ require('lazy').setup({
   -- ToggleTerm
   require 'plugins.toggleterm',
 
+  -- Trim Whitespace
+  require 'plugins.trim',
+
   -- Zen mode
   'folke/zen-mode.nvim',
 
