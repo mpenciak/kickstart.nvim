@@ -73,6 +73,8 @@ require('lazy').setup({
   -- Zen mode
   'folke/zen-mode.nvim',
 
+  require 'plugins.mdpreview',
+
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
