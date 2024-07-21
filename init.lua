@@ -73,6 +73,7 @@ require('lazy').setup({
   -- Zen mode
   'folke/zen-mode.nvim',
 
+  -- Markdown previewer
   require 'plugins.mdpreview',
 
   -- require 'kickstart.plugins.debug',
