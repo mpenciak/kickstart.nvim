@@ -1,6 +1,6 @@
 local function on_attach(_, _)
   vim.keymap.set('n', '<C-w>i', '<C-w>K20<C-w>-')
-  vim.keymap.set('n', '<leader>lx', '<cmd>LeanRestartFile<CR>')
+  vim.keymap.set('n', '<localleader>r', '<cmd>LeanRestartFile<CR>')
 end
 
 return {

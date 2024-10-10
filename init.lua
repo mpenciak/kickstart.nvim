@@ -1,6 +1,7 @@
 -- Set <space> as the leader key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = '  '
+vim.g.disable_autoformat = false
 
 -- [[ Setting options ]]
 require 'options'
@@ -15,7 +16,7 @@ require 'autocmds'
 require 'lazy-init'
 
 -- [[ Configure and install plugins ]]
-require('lazy').setup({
+local plugins = {
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
@@ -39,9 +40,6 @@ require('lazy').setup({
 
   -- Completions
   require 'plugins.nvim-cmp',
-
-  -- Colorscheme
-  require 'colorscheme',
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
@@ -76,15 +74,42 @@ require('lazy').setup({
   -- Markdown previewer
   require 'plugins.mdpreview',
 
+  -- Vivify plugin
+  {
+    'jannis-baum/vivify.vim',
+    config = function()
+      vim.g.vivify_instant_refresh = 0
+    end,
+  },
+
+  -- zk-org plugin
+  require 'plugins.zk-org',
+
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns',
-}, {
-  ui = require 'lazy-ui',
-})
+}
 
--- The line beneath this is called `modeline`. See `:help modeline`
+-- Populate the color scheme
+for _, value in ipairs(require 'colorscheme') do
+  table.insert(plugins, value)
+end
+
+-- Set UI options
+local ui = {
+  ui = require 'lazy-ui',
+}
+
+-- Set up plugins
+require('lazy').setup(plugins, ui)
+
+-- Zk commands
+require 'zk-commands'
+
+-- Set colorscheme
+vim.cmd.colorscheme 'kanagawa'
+
 -- vim: ts=2 sts=2 sw=2 et
