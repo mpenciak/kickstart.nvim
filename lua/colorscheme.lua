@@ -16,4 +16,21 @@ return {
   { 'sekke276/dark_flat.nvim' },
   { 'miikanissi/modus-themes.nvim' },
   { 'bluz71/vim-moonfly-colors' },
+  {
+    'navarasu/onedark.nvim',
+    init = function()
+      require('onedark').setup {
+        style = 'warmer',
+      }
+    end,
+  },
+  { 'Mofiqul/vscode.nvim' },
+  {
+    'navarasu/onedark.nvim',
+    config = function()
+      require('onedark').setup {
+        style = 'darker',
+      }
+    end,
+  },
 }

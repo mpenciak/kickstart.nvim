@@ -85,6 +85,12 @@ local plugins = {
   -- zk-org plugin
   require 'plugins.zk-org',
 
+  -- Copilot
+  'github/copilot.vim',
+
+  -- Zig
+  'ziglang/zig.vim',
+
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
@@ -110,6 +116,9 @@ require('lazy').setup(plugins, ui)
 require 'zk-commands'
 
 -- Set colorscheme
-vim.cmd.colorscheme 'kanagawa'
+vim.cmd.colorscheme 'vscode'
+
+-- Set up Verilog settings
+require 'verible'
 
 -- vim: ts=2 sts=2 sw=2 et
