@@ -86,7 +86,7 @@ local plugins = {
   require 'plugins.zk-org',
 
   -- Copilot
-  'github/copilot.vim',
+  require 'plugins.copilot',
 
   -- Zig
   'ziglang/zig.vim',
