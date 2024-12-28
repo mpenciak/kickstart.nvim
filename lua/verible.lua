@@ -18,10 +18,11 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 })
 
 -- Setting the filetype for Verilog
-vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
-  pattern = { '*.v' },
-  command = 'set filetype=verilog',
-})
+-- TODO: This is bad becasue it conflicts with Coq
+-- vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
+--   pattern = { '*.v' },
+--   command = 'set filetype=verilog',
+-- })
 
 -- Setting the filetype for SystemVerilog
 vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
