@@ -119,7 +119,7 @@ require('lazy').setup(plugins, ui)
 require 'zk-commands'
 
 -- Set colorscheme
-vim.cmd.colorscheme 'vscode'
+vim.cmd.colorscheme 'kanagawa'
 
 -- Set up Verilog settings
 require 'verible'
