@@ -91,6 +91,9 @@ local plugins = {
   -- Zig
   'ziglang/zig.vim',
 
+  -- Coq
+  require 'plugins.coqtail',
+
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
