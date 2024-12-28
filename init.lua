@@ -124,4 +124,7 @@ vim.cmd.colorscheme 'vscode'
 -- Set up Verilog settings
 require 'verible'
 
+-- Set up python3_host_prog
+vim.g.python3_host_prog = '/home/matej/.pyenv/versions/nvim/bin/python3'
+
 -- vim: ts=2 sts=2 sw=2 et
