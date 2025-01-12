@@ -71,6 +71,9 @@ local plugins = {
   -- Zen mode
   'folke/zen-mode.nvim',
 
+  -- diff view
+  'sindrets/diffview.nvim',
+
   -- Markdown previewer
   require 'plugins.mdpreview',
 
