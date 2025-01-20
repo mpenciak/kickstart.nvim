@@ -74,6 +74,9 @@ local plugins = {
   -- diff view
   'sindrets/diffview.nvim',
 
+  -- oil fileviewer
+  require 'plugins.oil',
+
   -- Octo for Github integration
   {
     'pwntester/octo.nvim',
@@ -145,5 +148,8 @@ require 'verible'
 
 -- Set up python3_host_prog
 vim.g.python3_host_prog = '/home/matej/.pyenv/versions/nvim/bin/python3'
+
+-- Set replace netrw
+require('oil').setup()
 
 -- vim: ts=2 sts=2 sw=2 et
