@@ -104,6 +104,9 @@ local plugins = {
   -- Copilot
   require 'plugins.copilot',
 
+  -- Copilot chat
+  require 'plugins.copilotchat',
+
   -- Zig
   'ziglang/zig.vim',
 
