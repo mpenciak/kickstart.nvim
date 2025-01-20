@@ -3,6 +3,8 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = '  '
 vim.g.disable_autoformat = false
 
+vim.hl = vim.highlight
+
 -- [[ Setting options ]]
 require 'options'
 
