@@ -71,7 +71,7 @@ local plugins = {
   require 'plugins.trim',
 
   -- Zen mode
-  'folke/zen-mode.nvim',
+  require 'plugins.zen',
 
   -- diff view
   'sindrets/diffview.nvim',

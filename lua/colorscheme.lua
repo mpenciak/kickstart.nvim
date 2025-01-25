@@ -1,10 +1,6 @@
 return {
-  {
-    'folke/tokyonight.nvim',
-  },
-  {
-    'rebelot/kanagawa.nvim',
-  },
+  { 'folke/tokyonight.nvim' },
+  { 'rebelot/kanagawa.nvim' },
   {
     'sekke276/dark_flat.nvim',
     opts = {
@@ -92,14 +88,6 @@ return {
   },
   { 'miikanissi/modus-themes.nvim' },
   { 'bluz71/vim-moonfly-colors' },
-  {
-    'navarasu/onedark.nvim',
-    init = function()
-      require('onedark').setup {
-        style = 'warmer',
-      }
-    end,
-  },
   { 'Mofiqul/vscode.nvim' },
   { 'cpea2506/one_monokai.nvim', opts = {
     transparent = false,
@@ -107,4 +95,6 @@ return {
       bg = '#141516',
     },
   } },
+  { 'olimorris/onedarkpro.nvim' },
+  { 'tiagovla/tokyodark.nvim' },
 }
