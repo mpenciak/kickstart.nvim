@@ -114,6 +114,7 @@ return {
           ['@keyword.zig'] = { fg = colors.aqua },
           ['@type.builtin.zig'] = { fg = colors.cyan },
           ['@lsp.type.namespace.zig'] = { fg = colors.red },
+          ['@lsp.type.struct.zig'] = { fg = colors.aqua:lighten(0.7) },
         }
       end,
     },

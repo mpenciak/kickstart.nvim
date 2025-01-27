@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = '  '
 vim.g.disable_autoformat = false
 
+-- Fix a 0.10.3 breaking change
 vim.hl = vim.highlight
 
 -- [[ Setting options ]]
@@ -147,6 +148,9 @@ vim.cmd.colorscheme 'kanagawa'
 
 -- Set up Verilog settings
 require 'verible'
+
+-- Set up Zig ZLS settings
+require 'zig'
 
 -- Set up python3_host_prog
 vim.g.python3_host_prog = '/home/matej/.pyenv/versions/nvim/bin/python3'
