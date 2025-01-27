@@ -5,10 +5,15 @@ return {
     'sekke276/dark_flat.nvim',
     opts = {
       colors = {
+        -- Override to a darker background
         bg = '#121314',
       },
+      -- Here we override some of the defaults for my regularly used languages
       themes = function(colors)
         return {
+          ----------
+          -- Lean --
+          ----------
           ['@lsp.type.keyword.lean'] = { fg = colors.aqua },
           ['leanCommand'] = { fg = colors.aqua },
           ['leanKeyword'] = { fg = colors.aqua },
@@ -38,11 +43,11 @@ return {
           ['leanNameLiteral'] = { fg = colors.green },
 
           -- dots
-          ['@lsp.type.property.lean'] = { fg = '#FFA500' },
+          ['@lsp.type.property.lean'] = { fg = '#ffa500' },
 
           -- sorries
-          ['@lsp.type.leanSorryLike.lean'] = { fg = '#FF0000' },
-          ['leanSorry'] = { fg = '#FF0000' },
+          ['@lsp.type.leanSorryLike.lean'] = { fg = '#ff0000', bold = true },
+          ['leanSorry'] = { fg = '#ff0000' },
 
           -- Text of things underlined
           -- ['DiagnosticUnderlineError'] = { fg = colors.red },
@@ -56,7 +61,7 @@ return {
           ['DiagnosticVirtualTextWarn'] = { fg = colors.orange },
 
           -- `Type`s and `Sort`s
-          ['leanSort'] = { fg = colors.light_green },
+          ['leanSort'] = { fg = colors.purple },
 
           -- numbers
           ['leanNumber'] = { fg = colors.purple },
@@ -81,7 +86,34 @@ return {
           -- Interpolated string portions?
           ['leanInterpolation'] = { fg = colors.aqua },
 
-          ['@lsp.mod.documentation.rust'] = { link = 'Comment' },
+          ------------
+          --- Rust ---
+          ------------
+          ['@lsp.mod.documentation'] = { link = 'Comment' },
+
+          ------------
+          -- LaTex ---
+          ------------
+          ['texCmdClass'] = { fg = colors.purple },
+          ['texFileArg'] = { fg = colors.cyan },
+          ['texDelim'] = { fg = colors.yellow },
+          ['texCmdPackage'] = { fg = colors.red },
+          ['texCmd'] = { fg = colors.dark_cyan },
+          ['texRefArg'] = { fg = colors.green },
+
+          ----------------
+          --- Markdown ---
+          ----------------
+          ['@markup.raw.markdown_inline'] = { fg = colors.peanut },
+          ['@markup.heading'] = { fg = colors.dark_cyan, bold = true },
+          ['@markup.math.latex'] = { fg = colors.aqua },
+
+          -----------
+          --- Zig ---
+          -----------
+          ['@keyword.zig'] = { fg = colors.aqua },
+          ['@type.builtin.zig'] = { fg = colors.cyan },
+          ['@lsp.type.namespace.zig'] = { fg = colors.red },
         }
       end,
     },
