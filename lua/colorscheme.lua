@@ -11,6 +11,7 @@ return {
       -- Here we override some of the defaults for my regularly used languages
       themes = function(colors)
         return {
+          ['NormalFloat'] = { bg = colors.bg:lighten(0.95) },
           ----------
           -- Lean --
           ----------
