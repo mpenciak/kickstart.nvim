@@ -15,6 +15,7 @@ return {
           ----------
           -- Lean --
           ----------
+          ['leanTodo'] = { fg = colors.dark_gray:darken(0.9), bg = colors.light_gray:lighten(0.9) },
           ['@lsp.type.keyword.lean'] = { fg = colors.aqua },
           ['leanCommand'] = { fg = colors.aqua },
           ['leanKeyword'] = { fg = colors.aqua },
