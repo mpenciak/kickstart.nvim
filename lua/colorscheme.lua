@@ -11,7 +11,18 @@ return {
       -- Here we override some of the defaults for my regularly used languages
       themes = function(colors)
         return {
-          ['NormalFloat'] = { bg = colors.bg:lighten(0.95) },
+          -- Color buffer floats better
+          ['NormalFloat'] = { fg = colors.fg:lighten(0.95), bg = colors.bg:lighten(0.95) },
+
+          -- Color neotree floats better
+          ['NeoTreeFloatNormal'] = {
+            fg = colors.fg,
+            bg = colors.bg:lighten(0.95),
+          },
+          ['NeoTreeFloatTitle'] = {
+            fg = colors.white,
+          },
+
           ----------
           -- Lean --
           ----------
