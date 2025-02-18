@@ -63,9 +63,9 @@ return {
           ['leanSorry'] = { fg = '#ff0000' },
 
           -- Text of things underlined
-          -- ['DiagnosticUnderlineError'] = { fg = colors.red },
-          -- ['DiagnosticUnderlineWarn'] = { fg = colors.orange },
-          ['DiagnosticUnderlineInfo'] = { sp = colors.dark_cyan, underline = true },
+          ['DiagnosticUnderlineError'] = { sp = colors.red, undercurl = true },
+          ['DiagnosticUnderlineWarn'] = { sp = colors.orange, undercurl = true },
+          ['DiagnosticUnderlineInfo'] = { sp = colors.dark_cyan, undercurl = true },
 
           -- Virtual text colors
           ['DiagnosticVirtualTextHint'] = { fg = colors.gray },

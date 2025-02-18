@@ -119,6 +119,9 @@ local plugins = {
   -- Coq
   require 'plugins.coqtail',
 
+  -- Noir
+  'noir-lang/noir-nvim',
+
   -- require 'kickstart.plugins.debug',
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
