@@ -111,10 +111,10 @@ local plugins = {
   require 'plugins.copilot',
 
   -- Copilot chat
-  -- require 'plugins.copilotchat',
+  require 'plugins.copilotchat',
 
   -- Avante (Copilot chat alternative)
-  require 'plugins.avante',
+  -- require 'plugins.avante',
 
   -- Zig
   'ziglang/zig.vim',
