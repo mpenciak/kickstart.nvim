@@ -111,7 +111,10 @@ local plugins = {
   require 'plugins.copilot',
 
   -- Copilot chat
-  require 'plugins.copilotchat',
+  -- require 'plugins.copilotchat',
+
+  -- Avante (Copilot chat alternative)
+  require 'plugins.avante',
 
   -- Zig
   'ziglang/zig.vim',
@@ -147,7 +150,7 @@ require('lazy').setup(plugins, ui)
 require 'zk-commands'
 
 -- Set colorscheme
-vim.cmd.colorscheme 'kanagawa'
+vim.cmd.colorscheme 'dark_flat'
 
 -- Set up Verilog settings
 require 'verible'
