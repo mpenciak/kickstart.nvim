@@ -7,6 +7,12 @@ return {
     },
     opts = {
       model = 'claude-3.7-sonnet',
+      mappings = {
+        reset = {
+          normal = '<C-R>',
+          insert = '<C-R>',
+        },
+      },
     },
     init = function()
       vim.keymap.set('n', '<leader>C', '<cmd>CopilotChat<cr>')
