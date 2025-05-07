@@ -19,11 +19,9 @@ return {
       on_attach = on_attach,
     },
     mappings = true,
-    infoview = {
-      goal_markers = {
-        unsolved = '',
-        accomplished = '',
-      },
+    goal_markers = {
+      unsolved = '',
+      accomplished = '',
     },
   },
 }
