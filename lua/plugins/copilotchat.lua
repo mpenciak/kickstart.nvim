@@ -6,7 +6,7 @@ return {
       { 'nvim-lua/plenary.nvim', branch = 'master' },
     },
     opts = {
-      model = 'gemini-2.5-pro',
+      model = 'claude-sonnet-4',
       mappings = {
         reset = {
           normal = '<C-R>',
