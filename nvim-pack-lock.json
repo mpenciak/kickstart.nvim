@@ -1,0 +1,24 @@
+{
+  "plugins": {
+    "lazydev.nvim": {
+      "rev": "01bc2aa",
+      "src": "https://github.com/folke/lazydev.nvim"
+    },
+    "lean.nvim": {
+      "rev": "6215ae0",
+      "src": "https://github.com/Julian/lean.nvim"
+    },
+    "nightingale.nvim": {
+      "rev": "b78ce50",
+      "src": "https://github.com/xeind/nightingale.nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "a9b2fb5",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "plenary.nvim": {
+      "rev": "b9fd522",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    }
+  }
+}
